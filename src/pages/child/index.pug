@@ -1,7 +1,16 @@
+//- ### BASE PATH SETTING OF FILE ###
 -var path = './..';
-//- ### IMPORTS COMMON CONFIGURATION ###
-include ../common/config.pug
-//- ### 
+//- ### CONFIGURATION ###
+-var commonConfiguration = true;
+//- ### CHANGE ONLY THE ABOVE SETTING ###
+//- ##############################
+-var specificConfiguration = true;
+//- ##############################
+if commonConfiguration
+    include ../common/config.pug
+else if specificConfiguration
+    include inc/config.pug
+//- ### END OF CONFIGURATION
 doctype html
 |
 |
