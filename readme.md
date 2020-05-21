@@ -117,8 +117,7 @@ Commit tags to identify process
 <!-- SINGLE LANDING KV -->
 Main should have a style applied: display: block to work properly.
 
-<body>
-	<main>
+<main>
 	<section class="kvSection">
 		<section class="kvSection__inner">
 			<figure class="kvSection__imageArea"></figure>
@@ -130,51 +129,48 @@ Main should have a style applied: display: block to work properly.
 			</div>
 		</section>
 	</section>
-	</main>
-</body>
+</main>
 
 <!-- SLIDER -->
 
-<body>
-	<section class="kvSection">
-		<section class="kvSection__inner">
-			<section class="kvSection__slider">
+<section class="kvSection">
+	<section class="kvSection__inner">
+		<section class="kvSection__slider">
 
-				<!-- SLIDE 1 -->
-				<article class="kvSection__slider__slide">
-					<figure class="kvSection__slider__slide__imageArea">
-						<img class="kvSection__slider__slide__imageArea__kv" alt="kv image src="#">
-					</figure>
-					<div class="kvSection__slider__slide__textArea01">
-						<p class="kvSection__slider__slide__textArea01__text01"></p>
-					</div>
-					<div class="kvSection__slider__slide__textArea02">
-						<p class="kvSection__slider__slide__textArea02__text01"></p>
-					</div>
-				</article>
+			<!-- SLIDE 1 -->
+			<article class="kvSection__slider__slide">
+				<figure class="kvSection__slider__slide__imageArea">
+					<img class="kvSection__slider__slide__imageArea__kv" alt="kv image src="#">
+				</figure>
+				<div class="kvSection__slider__slide__textArea01">
+					<p class="kvSection__slider__slide__textArea01__text01"></p>
+				</div>
+				<div class="kvSection__slider__slide__textArea02">
+					<p class="kvSection__slider__slide__textArea02__text01"></p>
+				</div>
+			</article>
 
-				<!-- SLIDE 2 -->
-				<article class="kvSection__slider__slide">
-					<figure class="kvSection__slider__slide__imageArea">
-						<img class="kvSection__slider__slide__imageArea__kv" alt="kv image src="#">
-					</figure>
-					<div class="kvSection__slider__slide__textArea01">
-						<p class="kvSection__slider__slide__textArea01__text01"></p>
-					</div>
-					<div class="kvSection__slider__slide__textArea02">
-						<p class="kvSection__slider__slide__textArea02__text01"></p>
-					</div>
-				</article>
-			
-			</section>
+			<!-- SLIDE 2 -->
+			<article class="kvSection__slider__slide">
+				<figure class="kvSection__slider__slide__imageArea">
+					<img class="kvSection__slider__slide__imageArea__kv" alt="kv image src="#">
+				</figure>
+				<div class="kvSection__slider__slide__textArea01">
+					<p class="kvSection__slider__slide__textArea01__text01"></p>
+				</div>
+				<div class="kvSection__slider__slide__textArea02">
+					<p class="kvSection__slider__slide__textArea02__text01"></p>
+				</div>
+			</article>
+		
 		</section>
 	</section>
-</body>
+</section>
 ```
 
 ### Child pages
 ```
-<body>
+<main class="child">
 	<section class="mainSection">
 		<section class="mainSection__container">
 			<aside class="mainSection__container__aside"></aside>
@@ -184,7 +180,7 @@ Main should have a style applied: display: block to work properly.
 			</section>
 		</section>
 	</section>
-</body>
+</main>
 ```
 
 ### Section content
@@ -195,7 +191,7 @@ Main should have a style applied: display: block to work properly.
 		<h3 class="section01__subheader"></h3>
 	</hgroup>
 	<section class="section01__inner"></section>
-</div>
+</section>
 ```
 
 ### Listings
@@ -205,11 +201,6 @@ Main should have a style applied: display: block to work properly.
 	<article class="productList__item"></article>
 	<article class="productList__item"></article>
 </section>
-```
-
-### Telephone 
-```
-<a href="tel:000000">000-123-1234</a>
 ```
 
 
@@ -272,6 +263,11 @@ Main should have a style applied: display: block to work properly.
 	Address 12345
 	Street, Building
 </address>
+```
+
+### Telephone 
+```
+<a href="tel:000000">000-123-1234</a>
 ```
 
 ### Footer, Copyright
