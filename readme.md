@@ -37,13 +37,13 @@
 ```
 	1. Prepos 7
 	1. Experience in SCSS, MIXINS, PUGJS
-	3. NPM Knowledge for Bitbucket Pipeline
+	3. NPM Knowledge for Bitbucket Pipelines
 ```
 
 # Project tree Structure
-	* Empty folders should not be in release phase should be deleted
-	* Files that are not used should be deleted
-	* PUGJS, SCSS folder and/or files does not need to be included on release phase
+	* Empty/blank files or folders should be in public/distribution.
+	* Files that are not used in public/dist should be removed/disabled or commented out.
+	* PUGJS, SCSS folder and Production/Source Files should not be placed in public/distribution.
 ```
 
 	-> projectname (Git Project Name)
@@ -63,12 +63,14 @@
 				-> index
 					-> inc
 						-> meta.pug
+						-> config.pug
 						-> section
 							-> section01.pug
 							-> section02.pug
 					-> index.pug (top)
 				-> child
 					-> inc
+						-> config.pug
 						-> meta.pug
 						-> section
 							-> section01.pug
@@ -77,7 +79,7 @@
 				-> common
 					-> header.pug
 					-> footer.pug
-					-> settings.pug (Structure starts here)
+					-> config.pug
 			-> htaccess
 				-> .htaccess
 				-> .htpasswd
@@ -92,9 +94,8 @@
 ### How to New Template (for skeleton/new project)
 ```
 	1. Understand Project Structure and Requirements
-	2. Set Prepos SCSS compile setting as COMPACT
-	3. Site Authentication @htaccess folder
-	4. npm init upon creation for package creation
+	2. Set Site Authentication @htaccess folder
+	3. Set output of Source files 'main.scss' and 'pug files' to Public accordingly.
 ```
 
 #  Git Tags

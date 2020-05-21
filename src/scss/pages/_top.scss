@@ -6,8 +6,6 @@ _top.scss
 
     .section01 {
         @include dContent($mw: 1200px, $pt: 150px, $mx: auto, $pl: 0, $pr: 0);
-        // @include dFlex(type--vertical);
-        justify-content: flex-start;
 
         &__figure {
 
