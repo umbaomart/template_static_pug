@@ -280,11 +280,9 @@ Main should have a style applied: display: block to work properly.
 
 # Guides
 ---
-### Using Prepos, for compiling SCSS/SASS
+### Using Prepos, for FTP upload
 (Auto FTP may be enable, disable before updating or saving to avoid overwriting files on test/live site)
 ```
-	Set to COMPACT mode
-
 	FTP settings
 	Remote Path: /html/
 	Upload Timeout: 20000
@@ -353,7 +351,7 @@ Main should have a style applied: display: block to work properly.
 #### Font Guide
 (Font guide can be accessed here)
 ```
-https://drive.google.com/drive/folders/1Pbf19HXGUfe_h-SPW-XAaHxEQ4ARiEPc
+https://drive.google.com/file/d/1ucyb9Z9ADDO8WP3PZFhDCtE8UO0wzmi9/view?usp=sharing
 ```
 
 ### Using Google Tag Manager for Click Events (As of 11/04/2019)
