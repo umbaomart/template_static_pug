@@ -1,0 +1,70 @@
+/* --------------
+HEADER
+---------------*/
+
+.headerContainer {
+
+    &__inner {
+        @include dFlex(type--vertical);
+
+        &__site {
+            @include hoverOpacity;
+
+            a {
+                i {
+                    margin-right: 5px;
+                }
+
+                span {
+                    @include dContent($w: 200px, $pl: 30px, $pr: 30px);
+                    @include dFont($ff: $fontFamily1, $fw: 800, $fs: 18px);
+                }
+            }
+        }
+
+        &__directoryList {
+            @include dFlex;
+
+            &__item {
+                position: relative;
+
+                a {
+                    @include dNavButton($py: 20px, $pl: 50px, $pr: 50px);
+                    @include dFont($ff: $fontFamily1, $fw: 500, $fs: 18px, $tt: uppercase, $fc: $gray);
+                    transition: 0.5s ease;
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+
+                .submenu {
+                    position: absolute;
+                    top: 66.4px;
+                    left: 0;
+                    @include z-index(submenu);
+                    visibility: hidden;
+                    pointer-events: none;
+                    opacity: 0;
+                    transition: .1s linear;
+
+                    &.isOpen {
+                        visibility: visible;
+                        pointer-events: all;
+                        opacity: 1;
+                    }
+
+                    &__item {
+                        background: rgba($white, 0.9);
+
+                        a {
+                            width: 161px;
+                            padding: 20px 15px 20px 15px;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

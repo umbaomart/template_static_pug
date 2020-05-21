@@ -1,0 +1,25 @@
+/* --------------
+KV GALLERY
+---------------*/
+
+.slider {
+    padding: 80px 0;
+
+    &__header {
+        @include dContent($fa: center, $pt: 30px, $pb: 30px);
+    }
+
+    &__inner {
+        @include dContent($w: 900px);
+        overflow: hidden;
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                .kv__gallery__image {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

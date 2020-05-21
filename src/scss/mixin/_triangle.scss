@@ -1,0 +1,26 @@
+@mixin triangle($d: 0, $w: 20px, $bgc: $black) {
+    content: '';
+    width: 0;
+    height: 0;
+    display: inline-block;
+
+    @if $d == 'up' {
+        border: $w solid transparent;
+        border-bottom: $w solid $black;
+    }
+
+    @elseif $d == 'left' {
+        border: $w solid transparent;
+        border-right: $w solid $black;
+    }
+
+    @elseif $d == 'right' {
+        border: $w solid transparent;
+        border-left: $w solid $black;
+    }
+
+    @elseif $d == 'down' {
+        border: $w solid transparent;
+        border-top: $w solid $black;
+    }
+}

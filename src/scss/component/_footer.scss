@@ -1,0 +1,31 @@
+/* --------------
+FOOTER
+---------------*/
+
+.footerContainer {
+
+    &__inner {
+        @include dFlex(type--all);
+        padding: 20px 0;
+        background: $gray;
+
+        &__site {
+            margin-right: 5px;
+
+            span {
+                @include dFont($ff: $fontFamily1, $fw: 800, $fs: 15px);
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &__copyrightTextArea {
+
+            &__text {
+                @include dFont($ff: $fontFamily1, $fw: 500, $fs: 15px, $tt: uppercase, $fc: $white);
+            }
+        }
+    }
+}

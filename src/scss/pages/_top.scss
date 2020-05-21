@@ -1,0 +1,96 @@
+/**************************************
+_top.scss
+***************************************/
+
+.topContent {
+
+    .section01 {
+        @include dContent($mw: 1200px, $pt: 150px, $mx: auto, $pl: 0, $pr: 0);
+        // @include dFlex(type--vertical);
+        justify-content: flex-start;
+
+        &__figure {
+
+            i {
+                font-size: 115px;
+            }
+        }
+
+        &__header {
+            @include dContent($pt: 20px, $pb: 20px, $pl: 45px);
+            @include dFont($ff: $fontFamily1, $fs: 30px, $fw: 500);
+        }
+
+        &__inner {
+            @include dContent(
+                $mw: 500px, 
+                $mx: auto, 
+                $mt: 20px, 
+                $pr: 0, 
+                $pl: 0
+            );
+            transition: .7s linear;
+            visibility: hidden;
+            overflow: hidden;
+            max-height: 0;
+
+            &.isOpen {
+                transition: .7s linear;
+                visibility: visible;
+                overflow: hidden;
+                max-height: 300px;
+            }
+
+            &__textArea {
+
+                &__text {
+                    @include dFont($fs: 20px);
+                }
+            }
+
+        }
+    }
+
+    .section02 {
+        @include dContent($mw: 1200px, $pt: 30px, $pb: 50px, $mx: auto);
+
+        &__header {
+            @include dContent($pt: 20px, $pb: 20px);
+            @include dFont($ff: $fontFamily1, $fs: 30px, $fw: 500);
+        }
+
+        &__inner {
+
+            &__textArea {
+                @include dContent($fa: justify);
+
+                &:not(:first-child) {
+                    margin-top: 30px;
+                }
+
+                &__text {
+                    @include dFont($fs: 20px);
+                }
+            }
+        }
+    }
+
+    .section03 {
+        @include dContent($w: 1200px, $pt: 100px, $pb: 100px, $pl: 0, $pr: 0);
+
+        &__header {
+            padding: 15px 0;
+            @include dLeft($w: 300px);
+            @include dFont($ff: $fontFamily1, $fs: 30px, $fw: 500);
+        }
+
+        &__inner {
+
+            p {
+                @include dFont($ff: $fontFamily1, $fs: 15px, $fw: 500);
+                margin-top: 10px;
+                padding-left: 10px;
+            }
+        }
+    }
+}

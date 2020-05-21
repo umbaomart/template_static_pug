@@ -1,0 +1,22 @@
+@mixin dPseudo($type: both) {
+    @if $type == both {
+      &:after, &:before {
+        position: absolute;
+        content: '';
+      }  
+    }
+
+    @if $type == before {
+        &:before {
+            position: absolute;
+            content: '';
+        }
+    }
+
+    @if $type == after {
+        &:after {
+            position: absolute;
+            content: '';
+        }
+    }
+}

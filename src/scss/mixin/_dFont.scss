@@ -1,0 +1,23 @@
+@mixin dFont($fw: 100, $fs: 1rem, $flh: 1.5, $fc: inherit, $ff: $fontFamily, $fa: inherit, $ls: normal, $tt: '', $td: '') {
+    font: $fw $fs + / + $flh $ff;
+
+    @if $ls != normal {
+        letter-spacing: $ls;
+    }
+
+    @if $fc != inherit {
+        color: $fc;
+    }
+
+    @if $fa != inherit {
+        text-align: $fa;
+    }
+
+    @if($tt != '') {
+        text-transform: $tt;
+    }
+
+    @if($td != '') {
+        text-decoration: $td;
+    }
+}

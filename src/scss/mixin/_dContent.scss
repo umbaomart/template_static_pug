@@ -1,0 +1,63 @@
+@mixin dContent(
+    $mw: inherit, 
+    $w: 100%, 
+    $pt: 0, 
+    $pr: null, 
+    $pb: 0, 
+    $pl: null, 
+    $my: 0,
+    $mx: 0,
+    $mt: 0, 
+    $mr: 0, 
+    $mb: 0, 
+    $ml: 0, 
+    $bgc: inherit, 
+    $fa: inherit,
+    $box: null
+    ) {
+
+    // $mx == ML and MR
+    // $my == MT and MB
+    // $box == box-sizing
+    // $spaceNumber == base variable
+    // $bgc == background
+    // $mw == max-width
+    // mRes == If SP == width: 100%
+
+    @if $my != 0 {
+        margin: $my $mr $my $ml;
+    } 
+    @else if $mx != 0 {
+        margin: $mt $mx $mb $mx;
+    } 
+    @else {
+        margin: $mt $mr $mb $ml;
+    }
+    @if $pr == null and $pl == null {
+        padding: $pt $spaceNumber $pb $spaceNumber;
+    }
+    @else {
+        padding: $pt $pr $pb $pl;
+    }
+    
+    width: $w;
+
+    @if $mw != inherit {
+        max-width: $mw;
+    }
+    @if $fa != inherit {
+        text-align: $fa;
+    }
+    @if $bgc != inherit {
+        background: $bgc;
+    }
+    @if $box != null {
+        box-sizing: $box;
+    }
+
+    @include mRes {
+        @if $mw != inherit {
+            max-width: 100%;
+        }
+    }
+}

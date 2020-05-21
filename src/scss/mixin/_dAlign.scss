@@ -1,0 +1,30 @@
+@mixin dCenter($w: auto, $pl: 0, $pr: 0) {
+    margin: auto;
+    padding-left: $pl;
+    padding-right: $pr;
+    max-width: $w;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+
+    &__text,
+    &__subText {
+        text-align: center;
+    }
+}
+
+@mixin dLeft($w: 100%) {
+    margin-right: auto;
+    max-width: $w;
+    width: 100%;
+}
+
+@mixin dRight($w: 100%) {
+    margin-left: auto;
+    max-width: $w;
+    width: 100%;
+}

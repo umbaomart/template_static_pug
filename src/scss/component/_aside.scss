@@ -1,0 +1,18 @@
+/* ------------
+ASIDE CONTAINER
+--------------*/
+.mainSection__container__aside {
+    display: none;
+    width: 200px;
+    height: 672px;
+
+    &__inner {
+        @include dFlex(type--all);
+
+        &__list {
+            @include dFlex(type--direction--column);
+
+            &__item {}
+        }
+    }
+}

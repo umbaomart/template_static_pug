@@ -1,0 +1,18 @@
+@mixin hoverOpacity($d: .2s, $o: .6) {
+    cursor: pointer;
+    transition: $d linear;
+
+    &:hover {
+        opacity: $o;
+    }
+}
+
+@mixin hoverBG($before, $after, $d: .2s) {
+    cursor: pointer;
+    background: $before;
+    transition: $d linear;
+
+    &:hover {
+        background: $after;
+    }
+}

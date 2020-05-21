@@ -1,0 +1,25 @@
+header.headerContainer
+	section.headerContainer__inner
+		div.headerContainer__inner__site
+			a(href=path+"/")
+				//- img.headerContainer__inner__name(src="https://via.placeholder.com/50x50" alt="site logo")
+				span 
+					i.fas(class="fa-low-vision")
+					|LOREM IPSUM
+		ul.headerContainer__inner__directoryList
+				li.headerContainer__inner__directoryList__item(data-menu="#menuA")
+					a(href="#" data-scroll="#1") About
+					ul.submenu(id="#menuA")
+						li.submenu__item
+							a(href="#") About Me
+						li.submenu__item
+							a(href="#") About You
+				li.headerContainer__inner__directoryList__item(data-menu="#menuB")
+					a(href="#" data-scroll="#2") Others
+					ul.submenu(id="#menuB")
+						li.submenu__item
+							a(href="#") Others 1
+						li.submenu__item
+							a(href="#") Others 2
+				li.headerContainer__inner__directoryList__item(data-menu="#menuC")
+					a(href="#" data-scroll="#3") Contact

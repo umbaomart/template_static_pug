@@ -1,0 +1,13 @@
+@mixin mRes {
+    @include media($maxMobileSize) {
+        width: 100%;
+        @content;
+    }
+}
+
+@mixin sRes {
+    @include mediaRange($minMobileSupportSize, $maxMobileSupportSize) {
+        width: 100%;
+        @content;
+    }
+}

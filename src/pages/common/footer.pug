@@ -1,0 +1,31 @@
+footer.footerContainer
+	section.footerContainer__inner
+		div.footerContainer__inner__site
+			span 
+				i.fas(class="fa-low-vision")
+				|LOREM IPSUM
+			//- img.footerContainer__inner__site__logo(src="https://via.placeholder.com/50x50" alt="footer logo")
+		div.footerContainer__inner__copyrightTextArea
+			small.footerContainer__inner__copyrightTextArea__text Copyright &copy; 2019 #{site_name} All Rights Reserved.
+|
+|
+// script
+|
+//- SCRIPT CONFIGURATION [SET DIRECTORY ONLY]
+block footerpathing
+	if isJQuery
+		script(src=path+"/assets/libs/jquery-3.4.1.min.js")
+	if isSwiper
+		script(src=path+"/assets/libs/swiper.min.js")
+	if isAOE
+		script(src=path+"/assets/libs/aos.js")
+	if isSlick
+		script(src=path+"/assets/libs/slick.min.js")
+	if isSlideBar
+		script(src=path+"/assets/libs/slidebars.js")
+	if fontA
+		script(src="https://kit.fontawesome.com/701b19f690.js" crossorigin="anonymous")
+//- END OF SCRIPT CONFIGURATION
+script(src=path+"/assets/libs/smoothscroll.min.js")
+script(src=path+"/assets/js/main.js")
+// / script

@@ -1,0 +1,17 @@
+@mixin media($breakPoint) {
+    @media screen and (max-width: $breakPoint) {
+        @content;
+    }
+}
+
+@mixin mediaMin($breakPoint) {
+    @media screen and (min-width: $breakPoint) {
+        @content;
+    }
+}
+
+@mixin mediaRange($breakPointStart, $breakPointUntil) {
+    @media screen and (min-width: $breakPointStart) and (max-width: $breakPointUntil) {
+        @content;
+    }
+}

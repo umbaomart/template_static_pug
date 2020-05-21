@@ -1,0 +1,9 @@
+section.section03
+    h2.section03__header(class="scrollAnchor") LOREM IPSUM
+        -var projects = [ { "name": "Carl", "status": "active", "email": "test@mail.com"}, { "name": "Shawn", "status": "inactive", "email": "jack@email.com"} ]
+    .section03__inner
+        each project in projects
+            .section03__inner__textArea
+                p.section02__inner__textArea__text #{project.name}
+                p.section02__inner__textArea__text #{project.status}
+                p.section02__inner__textArea__text #{project.email}

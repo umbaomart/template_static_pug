@@ -1,0 +1,8 @@
+@mixin dNavButton($py: 15px, $pl: 15px, $pr: 15px, $bgc: null) {
+    padding: $py $pr $py $pl;
+    display: block;
+
+    @if($bgc != null) {
+        background-color: $bgc;
+    }
+}

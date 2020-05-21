@@ -1,0 +1,65 @@
+-var path = './..';
+//- ### IMPORTS COMMON CONFIGURATION ###
+include ../common/config.pug
+//- ### 
+doctype html
+|
+|
+html(class="no-js" lang="ja")
+    |
+    // head
+    include inc/meta.pug
+    include ../common/head.pug
+    // / head
+    |
+    |
+    body(id="pagetop")
+        |
+        if isGoogleTagManager
+            |
+            |
+            <!-- Google Tag Manager (noscript) -->
+            noscript
+                iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-KBCPNSS"
+            height="0" width="0" style="display:none;visibility:hidden")
+            <!-- End Google Tag Manager (noscript) -->
+        |
+        |
+        // header
+        include ../common/header.pug
+        // / header
+        |
+        |
+        // main
+        main.mainSection
+            section.mainSection__container
+                aside.mainSection__container__aside
+                section.mainSection__container__content
+                    //- SPECIFIC PAGE CLASS...
+                    section.mainSection__container__content__inner(class="topContent")
+                        |
+                        |
+                        // section kv
+                        include inc/sectionKV.pug
+                        // / section kv
+                        |
+                        |
+                        // section01
+                        include inc/section01.pug
+                        // / section01
+                        |
+                        |
+                        // section02
+                        include inc/section02.pug
+                        // / section02
+                        |
+                        |
+                        // section03
+                        include inc/section03.pug
+                        // / section03
+        |
+        |
+        // footer
+        include ../common/footer.pug
+        // / footer
+        // / main
